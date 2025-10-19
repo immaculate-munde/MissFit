@@ -26,9 +26,14 @@ module.exports = {
           "0%, 100%": { "background-position": "0% 50%" },
           "50%": { "background-position": "100% 50%" },
         },
+        "slide-down": {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
       },
       animation: {
         gradient: "gradient 15s ease infinite",
+        "slide-down": "slide-down 0.3s ease-out",
       },
       backgroundSize: {
         "400%": "400% 400%",
