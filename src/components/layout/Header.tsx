@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Menu as MenuIcon, X as CloseIcon, Sun, Moon } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -16,14 +18,34 @@ const Header: React.FC = () => {
     }
   }, [darkMode]);
 
-  // Smooth scroll to section
-  const scrollToSection = (id: string) => {
+  // Updated navigation function for better download handling
+  const handleNavigation = (id: string) => {
+    // Always navigate to home first if not there
+    if (location.pathname !== '/') {
+      window.location.href = `/${id ? '#' + id : ''}`;
+      return;
+    }
+
+    // If we're already on home page
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      // Update URL without page reload
+      window.history.pushState({}, '', `/#${id}`);
     }
     setIsMenuOpen(false);
   };
+
+  // Single source of navigation links
+  const navigationLinks = [
+    { label: "Home", id: "home" },
+    { label: "How It Works", id: "how-it-works" },
+    { label: "Poses", id: "poses" },
+    { label: "Benefits", id: "benefits" },
+    { label: "Testimonials", id: "testimonials" },
+    { label: "Download", id: "download" }, // Changed to id from path
+    { label: "Contact", path: "/contact" },
+  ];
 
   return (
     <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50 transition-colors duration-300">
@@ -31,29 +53,32 @@ const Header: React.FC = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-purple-600 font-bold text-xl dark:text-purple-400">
+            <Link to="/" className="text-purple-600 font-bold text-xl dark:text-purple-400 hover:opacity-80 transition-opacity">
               MissFit
-            </span>
+            </Link>
           </div>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex space-x-8 items-center">
-            {[
-              { label: "Home", id: "home" },
-              { label: "How It Works", id: "how-it-works" },
-              { label: "Poses", id: "poses" },
-              { label: "Benefits", id: "benefits" },
-              { label: "Testimonials", id: "testimonials" },
-              { label: "Download", id: "download" },
-            ].map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-200"
-              >
-                {link.label}
-              </button>
-            ))}
+            {navigationLinks.map((link) =>
+              link.path ? (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <button
+                  key={link.id}
+                  onClick={() => handleNavigation(link.id!)}
+                  className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-200"
+                >
+                  {link.label}
+                </button>
+              )
+            )}
 
             {/* Theme toggle */}
             <button
@@ -84,22 +109,26 @@ const Header: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 animate-slide-down">
           <div className="pt-2 pb-4 space-y-2">
-            {[
-              { label: "Home", id: "home" },
-              { label: "Benefits", id: "benefits" },
-              { label: "Poses", id: "poses" },
-              { label: "How It Works", id: "how-it-works" },
-              { label: "Testimonials", id: "testimonials" },
-              { label: "Contact", id: "contact" },
-            ].map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left pl-4 pr-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-              >
-                {link.label}
-              </button>
-            ))}
+            {navigationLinks.map((link) =>
+              link.path ? (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className="block w-full text-left pl-4 pr-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <button
+                  key={link.id}
+                  onClick={() => handleNavigation(link.id!)}
+                  className="block w-full text-left pl-4 pr-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                >
+                  {link.label}
+                </button>
+              )
+            )}
 
             {/* Theme toggle */}
             <button

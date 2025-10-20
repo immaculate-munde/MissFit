@@ -18,13 +18,13 @@ const LandingPage: React.FC = () => {
       <div id="poses" className="bg-white dark:bg-gray-900">
         <DemoSection />
       </div>
-      <div id="features" className="bg-white dark:bg-gray-900">
+      <div id="benefits" className="bg-white dark:bg-gray-900">
         <Benefits />
       </div>
       <div id="testimonials" className="bg-white dark:bg-gray-900">
         <Testimonials />
       </div>
-      <div id="contact">
+      <div id="download">
         <CallToAction />
       </div>
     </div>
