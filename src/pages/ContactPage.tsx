@@ -16,7 +16,7 @@ const ContactPage: React.FC = () => {
     setStatus('sending');
     
     try {
-      const response = await fetch('https://formspree.io/f/missfitfashion2025@gmail.com', {
+      const response = await fetch('https://formspree.io/f/xwprzzrl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

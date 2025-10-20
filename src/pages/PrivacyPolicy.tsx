@@ -70,8 +70,8 @@ const PrivacyPolicy: React.FC = () => {
             <h2 className="text-2xl font-bold">4. User Choices</h2>
             <p>
               You can request deletion of your data or photos at any time by contacting us at:{' '}
-              <a href="mailto:jaraemmanuel562@gmail.com" className="text-purple-600 dark:text-purple-400 hover:underline">
-                jaraemmanuel562@gmail.com
+              <a href="mailto:missfitfashion2025@gmail.com" className="text-purple-600 dark:text-purple-400 hover:underline">
+                missfitfashion2025@gmail.com
               </a>
             </p>
           </section>
@@ -96,8 +96,8 @@ const PrivacyPolicy: React.FC = () => {
             <h2 className="text-2xl font-bold">7. Contact Us</h2>
             <p>
               If you have questions or concerns about this Privacy Policy, contact us at:{' '}
-              <a href="mailto:jaraemmanuel562@gmail.com" className="text-purple-600 dark:text-purple-400 hover:underline">
-                jaraemmanuel562@gmail.com
+              <a href="mailto:missfitfashion2025@gmail.com" className="text-purple-600 dark:text-purple-400 hover:underline">
+                missfitfashion2025@gmail.com
               </a>
             </p>
           </section>
