@@ -3,14 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard";
-import Profile from "./pages/Profile";
 import Layout from "./components/layout/Layout";
-
-// Auth pages
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
-import ForgotPassword from "./pages/ForgotPassword";
-import ResetPassword from "./pages/ResetPassword";
+import ContactPage from "./pages/ContactPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import FAQ from "./pages/FAQ";
 
 export function App() {
   return (
@@ -34,19 +30,29 @@ export function App() {
           }
         />
         <Route
-          path="/profile"
+          path="/contact"
           element={
             <Layout>
-              <Profile />
+              <ContactPage />
             </Layout>
           }
         />
-
-        {/* Auth routes (no Layout, standalone forms) */}
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route
+          path="/privacy-policy"
+          element={
+            <Layout>
+              <PrivacyPolicy />
+            </Layout>
+          }
+        />
+        <Route
+          path="/faq"
+          element={
+            <Layout>
+              <FAQ />
+            </Layout>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

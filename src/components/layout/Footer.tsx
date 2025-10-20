@@ -84,12 +84,12 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#faq"
+                <Link
+                  to="/faq"
                   className="text-base text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:translate-x-1 inline-block"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -102,34 +102,18 @@ const Footer: React.FC = () => {
             <ul className="mt-4 space-y-4">
               <li>
                 <Link
-                  to="/about"
-                  className="text-base text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:translate-x-1 inline-block"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/blog"
-                  className="text-base text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:translate-x-1 inline-block"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/careers"
-                  className="text-base text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:translate-x-1 inline-block"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/contact"
                   className="text-base text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:translate-x-1 inline-block"
                 >
-                  Contact
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/privacy-policy"
+                  className="text-base text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:translate-x-1 inline-block"
+                >
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
