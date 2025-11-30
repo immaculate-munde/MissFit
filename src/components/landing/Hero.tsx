@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-xl bg-purple-600 text-white font-semibold flex items-center justify-center shadow-lg hover:bg-purple-700 hover:scale-105 transform transition duration-300"
             >
-              📱 Download APK
+              📱 Download APP
             </a>
 
             {/* Scroll to Demo */}

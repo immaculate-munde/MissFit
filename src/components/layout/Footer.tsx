@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Instagram, Twitter, Facebook, Smartphone } from "lucide-react";
+import { Instagram, Twitter, Facebook, Smartphone, X, Linkedin } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -39,16 +39,16 @@ const Footer: React.FC = () => {
                 className="text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transform transition-transform duration-300 hover:scale-125"
               >
                 <Twitter size={20} />
-                <span className="sr-only">Twitter</span>
+                <span className="sr-only">X (Formerly Twitter)</span>
               </a>
 
-              {/* Facebook */}
+              {/* LinkedIn */}
               <a
                 href="#"
                 className="text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transform transition-transform duration-300 hover:scale-125"
               >
-                <Facebook size={20} />
-                <span className="sr-only">Facebook</span>
+                <Linkedin size={20} />
+                <span className="sr-only">LinkedIn</span>
               </a>
             </div>
           </div>
@@ -141,20 +141,20 @@ const Footer: React.FC = () => {
               </a>
 
               {/* Google Play (APK link) */}
-              <a
-                href="/MissFitApp.apk"
-                download
-                className="inline-flex items-center px-4 py-2 rounded-md shadow-md text-sm font-medium text-gray-700 dark:text-gray-200 bg-gradient-to-r from-white to-purple-50 dark:from-gray-800 dark:to-gray-700 hover:from-purple-100 hover:to-white dark:hover:from-purple-800 dark:hover:to-gray-800 transition-all duration-300 hover:scale-105 active:scale-95"
+              <button
+                disabled
+                className="inline-flex items-center px-4 py-2 rounded-md shadow-md text-sm font-medium text-gray-400 dark:text-gray-500 bg-gradient-to-r from-white to-purple-50 dark:from-gray-800 dark:to-gray-700 opacity-60 cursor-not-allowed"
+                title="APK download temporarily disabled. New version coming soon."
               >
                 <Smartphone className="h-5 w-5 mr-2" />
-                Download APK
-              </a>
+                Download APK (Unavailable)
+              </button>
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-12 border-t border-gray-200 dark:border-gray-700 pt-8">
+        <div className="mt-12 border-t border-gray-200 dark:border-gray-700 pt-8 flex items-center justify-center gap-2">
           <p className="text-base text-gray-400 dark:text-gray-500 text-center">
             &copy; {new Date().getFullYear()} MissFit. All rights reserved. Made with
             love by MissFit Team.

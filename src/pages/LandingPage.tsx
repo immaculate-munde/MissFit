@@ -5,6 +5,7 @@ import HowItWorks from "../components/landing/HowItWorks";
 import Testimonials from "../components/landing/Testimonials";
 import DemoSection from "../components/landing/DemoSection";
 import CallToAction from "../components/landing/CallToAction";
+import Partners from "../components/landing/Partners";
 
 const LandingPage: React.FC = () => {
   return (
@@ -18,8 +19,15 @@ const LandingPage: React.FC = () => {
       <div id="poses" className="bg-white dark:bg-gray-900">
         <DemoSection />
       </div>
+      <div id="partners" className="bg-white dark:bg-gray-900">
+        <Partners />
+      </div>
       <div id="benefits" className="bg-white dark:bg-gray-900">
         <Benefits />
+      </div>
+      <div id="pricing" className="bg-white dark:bg-gray-900">
+        {/* If you have a Pricing component */}
+        {/* <Pricing /> */}
       </div>
       <div id="testimonials" className="bg-white dark:bg-gray-900">
         <Testimonials />
