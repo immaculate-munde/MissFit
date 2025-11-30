@@ -9,17 +9,17 @@ const DemoSection: React.FC = () => {
     {
       title: "Front View (Holding A4 Paper)",
       desc: "Stand straight and hold an A4 paper vertically in front of your torso. This helps calibrate accurate scaling for your body.",
-      image: "/images/front-a4.jpg",
+      image: "/images/front-a4.jpg", // TODO: Replace with updated image
     },
     {
       title: "Front View (Arms Slightly Out)",
       desc: "Raise your arms slightly away from your sides. This allows MissFit to measure shoulder width and silhouette accurately.",
-      image: "/images/front-arms.jpg",
+      image: "/images/front-arms.jpg", // TODO: Replace with updated image
     },
     {
       title: "Side View",
       desc: "Turn sideways and keep your posture natural. This helps capture body depth and posture data.",
-      image: "/images/side-view.jpg",
+      image: "/images/side-view.jpg", // TODO: Replace with updated image
     },
   ];
 
@@ -48,7 +48,7 @@ const DemoSection: React.FC = () => {
 
               {/* Video inside the phone */}
               <video
-                src="/videos/missfit-demo.mp4"
+                src="/videos/missfit-demo.mp4" // TODO: Replace with updated demo video
                 autoPlay
                 muted
                 loop
