@@ -7,6 +7,7 @@ import Layout from "./components/layout/Layout";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import FAQ from "./pages/FAQ";
+import Pricing from "./pages/Pricing";
 
 export function App() {
   return (
@@ -50,6 +51,14 @@ export function App() {
           element={
             <Layout>
               <FAQ />
+            </Layout>
+          }
+        />
+        <Route
+          path="/pricing"
+          element={
+            <Layout>
+              <Pricing />
             </Layout>
           }
         />

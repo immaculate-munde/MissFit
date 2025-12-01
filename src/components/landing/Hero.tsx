@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-xl bg-purple-600 text-white font-semibold flex items-center justify-center shadow-lg hover:bg-purple-700 hover:scale-105 transform transition duration-300"
             >
-              📱 Download APP
+              📱 Download APK
             </a>
 
             {/* Scroll to Demo */}
@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
         >
           <div className="relative w-[260px] sm:w-[300px] md:w-[340px] lg:w-[400px] aspect-[9/19] rounded-[2.5rem] bg-gray-800 shadow-2xl overflow-hidden border-[12px] border-gray-900">
             <video
-              src="/videos/missfit-demo.mp4"
+              src="/videos/missfit-demo1.mp4"
               autoPlay
               loop
               muted

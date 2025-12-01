@@ -7,7 +7,7 @@ const steps = [
     id: 1,
     title: "Capture Your Photo",
     description:
-      "Take a full-body photo in good lighting using your phone — no tape measure needed! For best accuracy, capture three poses shown in Demo Section.",
+      "Take a full-body photo in good lighting using your phone; no tape measure needed! For best accuracy, capture three poses shown in Demo Section.",
     icon: Camera,
   },
   {
@@ -21,7 +21,7 @@ const steps = [
     id: 3,
     title: "Get Your Fit",
     description:
-      "Receive size recommendations tailored to your shape — whether for custom outfits or online shopping.",
+      "Receive size recommendations tailored to your shape; whether for custom outfits or online shopping.",
     icon: Ruler,
   },
 ];

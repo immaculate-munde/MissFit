@@ -55,6 +55,13 @@ const ContactPage: React.FC = () => {
         <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white text-center mb-8">
           Get in Touch
         </h1>
+        <div className="mb-8 text-center">
+          <div className="text-lg text-gray-700 dark:text-gray-200">
+              <span className="font-semibold">Phone 1:</span> <a href="tel:+254755495934" className="text-purple-600 hover:underline">+254 755 495 934</a><br />
+              <span className="font-semibold">Phone 2:</span> <a href="tel:+254743605923" className="text-purple-600 hover:underline">+254 743 605 923</a><br />
+              <span className="font-semibold">Email:</span> <a href="mailto:missfitfashion2025@gmail.com" className="text-purple-600 hover:underline">missfitfashion2025@gmail.com</a>
+          </div>
+        </div>
         
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8">
           <form onSubmit={handleSubmit} className="space-y-6">

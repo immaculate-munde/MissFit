@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Instagram, Twitter, Facebook, Smartphone, X, Linkedin } from "lucide-react";
+import { Instagram, Twitter, Smartphone, Linkedin } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             <div className="flex space-x-4 mt-4">
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/mom_crochetchic/"
+                href="https://www.instagram.com/missfit.fashion?utm_source=qr&igsh=aWgyYjN5dXA1b2Jz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transform transition-transform duration-300 hover:scale-125"
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
 
               {/* Twitter */}
               <a
-                href="#"
+                href="https://x.com/MissFitScan?t=A7sNRbhd8FYCh_ul2e-vxw&s=09"
                 className="text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transform transition-transform duration-300 hover:scale-125"
               >
                 <Twitter size={20} />
@@ -76,12 +76,12 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#pricing"
+                <Link
+                  to="/pricing"
                   className="text-base text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:translate-x-1 inline-block"
                 >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
@@ -141,14 +141,16 @@ const Footer: React.FC = () => {
               </a>
 
               {/* Google Play (APK link) */}
-              <button
-                disabled
-                className="inline-flex items-center px-4 py-2 rounded-md shadow-md text-sm font-medium text-gray-400 dark:text-gray-500 bg-gradient-to-r from-white to-purple-50 dark:from-gray-800 dark:to-gray-700 opacity-60 cursor-not-allowed"
-                title="APK download temporarily disabled. New version coming soon."
+              <a
+                href="https://firebasestorage.googleapis.com/v0/b/missfit-9e87b.firebasestorage.app/o/public%2FMissFit.apk?alt=media&token=0d00031c-10f5-49b6-bc90-08a757230a7d"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 rounded-md shadow-md text-sm font-medium text-white bg-purple-500 hover:bg-purple-400 dark:bg-purple-700 dark:hover:bg-purple-600 transition-all duration-300 hover:scale-105 active:scale-95"
+                title="Download the MissFit APK for Android"
               >
                 <Smartphone className="h-5 w-5 mr-2" />
-                Download APK (Unavailable)
-              </button>
+                Download APK
+              </a>
             </div>
           </div>
         </div>
