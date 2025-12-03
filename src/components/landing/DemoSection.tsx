@@ -48,7 +48,7 @@ const DemoSection: React.FC = () => {
 
               {/* Video inside the phone */}
               <video
-                src="/videos/missfit-demo1.mp4" // TODO: Replace with updated demo video
+                src="/videos/missfit-demo2.mp4" // TODO: Replace with updated demo video
                 autoPlay
                 muted
                 loop

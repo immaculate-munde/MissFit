@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
         >
           <div className="relative w-[260px] sm:w-[300px] md:w-[340px] lg:w-[400px] aspect-[9/19] rounded-[2.5rem] bg-gray-800 shadow-2xl overflow-hidden border-[12px] border-gray-900">
             <video
-              src="/videos/missfit-demo1.mp4"
+              src="/videos/missfit-demo2.mp4"
               autoPlay
               loop
               muted
