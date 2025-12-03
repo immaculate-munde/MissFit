@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           >
             {/* Download Button */}
             <a
-              href="https://firebasestorage.googleapis.com/v0/b/missfit-9e87b.firebasestorage.app/o/public%2FMissFit.apk?alt=media&token=0d00031c-10f5-49b6-bc90-08a757230a7d"
+              href="https://firebasestorage.googleapis.com/v0/b/missfit-9e87b.firebasestorage.app/o/public%2FMissFit.apk?alt=media&token=7e6479ca-f8e5-429f-a9e3-6e0a9f95eb33"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-xl bg-purple-600 text-white font-semibold flex items-center justify-center shadow-lg hover:bg-purple-700 hover:scale-105 transform transition duration-300"

@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
 
               {/* Google Play (APK link) */}
               <a
-                href="https://firebasestorage.googleapis.com/v0/b/missfit-9e87b.firebasestorage.app/o/public%2FMissFit.apk?alt=media&token=0d00031c-10f5-49b6-bc90-08a757230a7d"
+                href="https://firebasestorage.googleapis.com/v0/b/missfit-9e87b.firebasestorage.app/o/public%2FMissFit.apk?alt=media&token=7e6479ca-f8e5-429f-a9e3-6e0a9f95eb33"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 rounded-md shadow-md text-sm font-medium text-white bg-purple-500 hover:bg-purple-400 dark:bg-purple-700 dark:hover:bg-purple-600 transition-all duration-300 hover:scale-105 active:scale-95"
