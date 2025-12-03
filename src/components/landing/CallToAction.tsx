@@ -18,7 +18,7 @@ const CallToAction: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           {/* Android Button */}
           <a
-            href="https://firebasestorage.googleapis.com/v0/b/missfit-9e87b.firebasestorage.app/o/public%2FMissFit.apk?alt=media&token=0d00031c-10f5-49b6-bc90-08a757230a7d"
+            href="https://firebasestorage.googleapis.com/v0/b/missfit-9e87b.firebasestorage.app/o/public%2FMissFit.apk?alt=media&token=7e6479ca-f8e5-429f-a9e3-6e0a9f95eb33"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-xl text-white bg-purple-500 hover:bg-purple-400 dark:bg-purple-700 dark:hover:bg-purple-600 transform transition-all duration-500 hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-purple-300/40 dark:hover:shadow-purple-900/40"
